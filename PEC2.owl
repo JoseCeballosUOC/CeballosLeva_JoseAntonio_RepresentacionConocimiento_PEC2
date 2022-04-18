@@ -1,0 +1,665 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/josec/ontologies/2022/3/ceballosleva_joseantonio_representacionconocimiento_pec2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/josec/ontologies/2022/3/ceballosleva_joseantonio_representacionconocimiento_pec2">
+    <Prefix name="" IRI="http://www.semanticweb.org/josec/ontologies/2022/3/untitled-ontology-3"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontology designed to describe house&apos;s series development</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal>Jose Antonio Ceballos Leva</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character_appearance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character_role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Episode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exterior_Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Illness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Illness_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interior_Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Main"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medication_SupplyMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place_position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#episode_has_doctor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#episode_has_illness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#episode_has_information"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#episode_has_patient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#episode_has_place"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#illnessType_has_illness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#illnessType_has_information"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#illnessType_has_medication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#illnessType_has_organ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#season_has_episode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#doctor_has_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#episode_has_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#illnessType_has_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#illness_has_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#medication_has_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#patient_has_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cancer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chemotherapy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dr._Cuddy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dr._House"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pancreas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pancreatic_Cancer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S01E01"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Character_appearance"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character_role"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chief"/>
+        <Class IRI="#Doctor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Character_role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exterior_Place"/>
+        <Class IRI="#Place_position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extra"/>
+        <Class IRI="#Character_appearance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Illness_Type"/>
+        <Class IRI="#Illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interior_Place"/>
+        <Class IRI="#Place_position"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Main"/>
+        <Class IRI="#Character_appearance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medication_SupplyMode"/>
+        <Class IRI="#Medication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#Character_role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place_position"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class IRI="#Doctor"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Illness"/>
+        <NamedIndividual IRI="#Cancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medication"/>
+        <NamedIndividual IRI="#Chemotherapy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chief"/>
+        <NamedIndividual IRI="#Dr._Cuddy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Main"/>
+        <NamedIndividual IRI="#Dr._Cuddy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chief"/>
+        <NamedIndividual IRI="#Dr._House"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Main"/>
+        <NamedIndividual IRI="#Dr._House"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organ"/>
+        <NamedIndividual IRI="#Pancreas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Illness_Type"/>
+        <NamedIndividual IRI="#Pancreatic_Cancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#S01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Episode"/>
+        <NamedIndividual IRI="#S01E01"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#illnessType_has_illness"/>
+        <NamedIndividual IRI="#Pancreatic_Cancer"/>
+        <NamedIndividual IRI="#Cancer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#illnessType_has_organ"/>
+        <NamedIndividual IRI="#Pancreatic_Cancer"/>
+        <NamedIndividual IRI="#Pancreas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#episode_has_doctor"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <NamedIndividual IRI="#Dr._Cuddy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#episode_has_doctor"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <NamedIndividual IRI="#Dr._House"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#episode_has_illness"/>
+        <NamedIndividual IRI="#S01E01"/>
+        <NamedIndividual IRI="#Pancreatic_Cancer"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#illness_has_name"/>
+        <NamedIndividual IRI="#Cancer"/>
+        <Literal>Cancer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#doctor_has_name"/>
+        <NamedIndividual IRI="#Dr._Cuddy"/>
+        <Literal>Lisa Cuddy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#doctor_has_name"/>
+        <NamedIndividual IRI="#Dr._House"/>
+        <Literal>Gregory House</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#illnessType_has_name"/>
+        <NamedIndividual IRI="#Pancreatic_Cancer"/>
+        <Literal>Pancreatic cancer</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#episode_has_doctor"/>
+        <ObjectProperty IRI="#episode_has_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#episode_has_illness"/>
+        <ObjectProperty IRI="#episode_has_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#episode_has_information"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#episode_has_patient"/>
+        <ObjectProperty IRI="#episode_has_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#episode_has_place"/>
+        <ObjectProperty IRI="#episode_has_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#illnessType_has_illness"/>
+        <ObjectProperty IRI="#illnessType_has_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#illnessType_has_information"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#illnessType_has_medication"/>
+        <ObjectProperty IRI="#illnessType_has_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#illnessType_has_organ"/>
+        <ObjectProperty IRI="#illnessType_has_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#season_has_episode"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#episode_has_doctor"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#episode_has_illness"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#episode_has_information"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#episode_has_patient"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#episode_has_place"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#illnessType_has_illness"/>
+        <Class IRI="#Illness_Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#illnessType_has_information"/>
+        <Class IRI="#Illness_Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#illnessType_has_medication"/>
+        <Class IRI="#Illness_Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#illnessType_has_organ"/>
+        <Class IRI="#Illness_Type"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#season_has_episode"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#episode_has_doctor"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#episode_has_illness"/>
+        <Class IRI="#Illness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#episode_has_information"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#episode_has_patient"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#episode_has_place"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#illnessType_has_illness"/>
+        <Class IRI="#Illness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#illnessType_has_information"/>
+        <Class IRI="#Illness_Type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#illnessType_has_medication"/>
+        <Class IRI="#Medication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#illnessType_has_organ"/>
+        <Class IRI="#Organ"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#season_has_episode"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#doctor_has_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#episode_has_code"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#illnessType_has_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#illness_has_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#medication_has_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#patient_has_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#doctor_has_name"/>
+        <Class IRI="#Doctor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#episode_has_code"/>
+        <Class IRI="#Episode"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#illnessType_has_name"/>
+        <Class IRI="#Illness_Type"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#illness_has_name"/>
+        <Class IRI="#Illness"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#medication_has_name"/>
+        <Class IRI="#Medication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#patient_has_name"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#doctor_has_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#episode_has_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#illnessType_has_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#illness_has_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#medication_has_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#patient_has_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Doctor"/>
+                <Variable IRI="urn:swrl:var#d"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Character"/>
+                <Variable IRI="urn:swrl:var#d"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Episode"/>
+                <Variable IRI="urn:swrl:var#e"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#episode_has_code"/>
+                <Variable IRI="urn:swrl:var#e"/>
+                <Variable IRI="urn:swrl:var#code"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#startsWith">
+                <Variable IRI="urn:swrl:var#code"/>
+                <Literal>S01</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#season_has_episode"/>
+                <NamedIndividual IRI="#S01"/>
+                <Variable IRI="urn:swrl:var#e"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Illness_Type"/>
+                <Variable IRI="urn:swrl:var#it"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#illnessType_has_medication"/>
+                <Variable IRI="urn:swrl:var#it"/>
+                <NamedIndividual IRI="#Cancer"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#illnessType_has_medication"/>
+                <Variable IRI="urn:swrl:var#it"/>
+                <NamedIndividual IRI="#Chemotherapy"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal>character is a class that defines the concept of a character within the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character_appearance</IRI>
+        <Literal>characterAppearance is a class that defines the type of character concept at the series level, establishing the different types of characters that we can associate with the narrative concept of series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character_role</IRI>
+        <Literal>characterRole is a class that defines the type of role that the character covers in the world that the series represents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chief</IRI>
+        <Literal>chief is a class that defines the characters who act as service heads or department heads among the doctors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Doctor</IRI>
+        <Literal>Doctor is a class that defines the characters that do doctor work in the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Episode</IRI>
+        <Literal>episode is a class that defines the chapter concept, encompassing both the content and the characteristics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Exterior_Place</IRI>
+        <Literal>ExteriorPlace is a class that describe the open scenarios used</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Extra</IRI>
+        <Literal>Extra is a class that defines the character concept that makes short or insignificant appearances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Illness</IRI>
+        <Literal>illness is a class that defines the concept of disease within the series, so it includes all the information regarding its characteristics and treatments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Illness</IRI>
+        <Literal>https://es.dbpedia.org/page/Enfermedad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Illness_Type</IRI>
+        <Literal>illnessType is a class that defines the concept of type of disease within diseases, example: cancer is disease and colon cancer is a type of disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Interior_Place</IRI>
+        <Literal>InteriorPlace is a class that describe the closed scenarios used</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Main</IRI>
+        <Literal>main is a class that defines the character concept that makes continuous appearances and is part of the main plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medication</IRI>
+        <Literal>Medication is a class that defines drugs and their characteristics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Medication</IRI>
+        <Literal>https://es.dbpedia.org/page/Medicamento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medication_SupplyMode</IRI>
+        <Literal>MedicationSupplyMode is a class that describes the ways one medicament could be applied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organ</IRI>
+        <Literal>Organ is a class that defines human organs and their characteristics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Pancreas</IRI>
+        <Literal>https://es.dbpedia.org/page/Pancreas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Patient</IRI>
+        <Literal>patient is a class that defines the characters that do patient work in the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Place</IRI>
+        <Literal>Place is a class that describe the scenarios where the series is recorded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Place_position</IRI>
+        <Literal>PlacePosition is a class that describe how are the scenarios</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Season</IRI>
+        <Literal>season is a class that defines the seasons that build up a series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Worker</IRI>
+        <Literal>worker is a class that defines the characters that act as normal doctors in the series</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
